@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "@oss-rar/documentation",
+  "version": "0.0.1",
+  "license": "MIT",
+  "files": [
+    "src/",
+    "doczrc.js",
+    "tsconfig.json",
+    "package.json"
+  ],
+  "scripts": {
+    "dev": "docz dev",
+    "build": "rimraf .docz && docz build",
+    "serve": "docz serve"
+  },
+  "dependencies": {
+    "docz": "2.3.0-alpha.13",
+    "gatsby-plugin-react-axe": "^0.4.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "theme-ui": "^0.3.1"
+  },
+  "devDependencies": {
+    "react-axe": "^3.4.1"
+  }
+}

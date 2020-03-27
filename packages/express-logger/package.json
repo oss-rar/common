@@ -1,0 +1,59 @@
+{
+  "private": false,
+  "name": "@oss-rar/express-logger",
+  "version": "0.0.1",
+  "description": "Express logger",
+  "author": "OSS RaR",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oss-rar/common.git"
+  },
+  "scripts": {
+    "build": "pika build",
+    "dev": "ts-node example/index.ts",
+    "dev:pretty": "ts-node example/index.ts | pino-pretty",
+    "type-check": "tsc --noEmit",
+    "test:all": "npm run type-check && npm run build"
+  },
+  "dependencies": {
+    "pino": "^5.17.0",
+    "pino-http": "^4.4.0"
+  },
+  "peerDependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "@types/pino": "^5.17.0",
+    "@types/pino-http": "^4.3.2",
+    "pino-pretty": "^3.6.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-ts-standard-pkg",
+        {}
+      ],
+      [
+        "@pika/plugin-build-node",
+        {}
+      ]
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-typescript",
+      "@babel/preset-react"
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          "@babel/preset-env"
+        ]
+      }
+    }
+  }
+}

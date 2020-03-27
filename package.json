@@ -1,0 +1,75 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "bootstrap": "lerna bootstrap --hoist --force-local",
+    "nuke": "npx rimraf node_modules package-lock.json && npm i && lerna exec \"npx rimraf -f package-lock.json npm-shrinkwrap.json\" && lerna clean --yes && lerna bootstrap && lerna exec --stream -- \"test -f package-lock.json || npm install --package-lock-only\"",
+    "docz:dev": "ENV=local lerna exec --scope '@oss-rar/documentation' npm run dev",
+    "docz:serve": "lerna exec --scope '@oss-rar/documentation' npm run serve",
+    "docz:build": "npx rimraf _docs && lerna run build --scope '@oss-rar/documentation' --stream",
+    "test": "lerna run test:all --ignore '@oss-rar/documentation'",
+    "build": "lerna run build --ignore '@oss-rar/documentation'",
+    "publish": "lerna publish --no-verify-access from-package --contents pkg",
+    "publish:dryrun": "npm run publish -- --no-git-tag-version --no-push",
+    "version": "lerna version --conventional-commits",
+    "version:dryrun": "npm run version -- --no-git-tag-version --no-push",
+    "version:prerelease": "npm run version -- --conventional-prerelease",
+    "version:prerelease:dryrun": "npm run version:prerelease -- --no-git-tag-version --no-push",
+    "version:graduate": "npm run version -- --conventional-graduate",
+    "version:graduate:dryrun": "npm run version:graduate -- --no-git-tag-version --no-push",
+    "prebuild": "npm run copy:packages",
+    "copy:packages": "npx copyfiles packages/**/documentation/packages/*.mdx packages/documentation/src/packages --exclude packages/documentation --flat",
+    "release": "git commit -m 'chore(release): bump' --allow-empty && git push origin"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@emotion/core": "^10.0.27",
+    "commitizen": "^4.0.3",
+    "copyfiles": "^2.2.0",
+    "cz-conventional-changelog": "^3.1.0",
+    "husky": "^4.2.3",
+    "lerna": "^3.20.2",
+    "mdx-deck": "^4.0.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-ts-standard-pkg": "^0.9.2",
+    "@pika/plugin-build-node": "^0.9.2",
+    "@types/jest": "^25.1.2",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  },
+  "resolutions": {},
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "useTabs": false,
+    "trailingComma": "none",
+    "singleQuote": true,
+    "printWidth": 120,
+    "tabWidth": 2
+  }
+}
