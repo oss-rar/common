@@ -15,7 +15,7 @@
     "serve": "docz serve"
   },
   "dependencies": {
-    "docz": "2.3.0-alpha.14",
+    "docz": "2.3.0",
     "gatsby-plugin-react-axe": "^0.4.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
