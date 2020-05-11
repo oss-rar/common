@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.2-alpha.27 (2020-05-11)
+
+**Note:** Version bump only for package @oss-rar/express-logger
+
+
+
+
+
 ## 0.0.2-alpha.26 (2020-05-05)
 
 **Note:** Version bump only for package @oss-rar/express-logger
