@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@oss-rar/express-logger",
-  "version": "0.0.2-alpha.42",
+  "version": "0.0.2-alpha.43",
   "description": "Express logger",
   "author": "OSS RaR",
   "license": "MIT",
