@@ -23,7 +23,7 @@
     "release": "git commit -m 'chore(release): bump' --allow-empty && git push origin"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
+    "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^8.3.4",
     "@emotion/core": "^10.0.27",
     "commitizen": "^4.0.3",
