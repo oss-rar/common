@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/config-conventional": "^9.0.1",
     "@emotion/core": "^10.0.27",
     "commitizen": "^4.0.3",
     "copyfiles": "^2.2.0",
