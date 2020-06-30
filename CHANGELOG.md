@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.2-alpha.58 (2020-06-30)
+
+**Note:** Version bump only for package root
+
+
+
+
+
 ## 0.0.2-alpha.57 (2020-06-30)
 
 **Note:** Version bump only for package root
