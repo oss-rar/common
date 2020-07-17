@@ -18,15 +18,15 @@
   },
   "dependencies": {
     "pino": "^6.0.0",
-    "pino-http": "^5.0.0"
+    "pino-http": "^5.0.0",
+    "@types/pino": "^6.0.0",
+    "@types/pino-http": "^5.0.0"
   },
   "peerDependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.3",
-    "@types/pino": "^6.0.0",
-    "@types/pino-http": "^5.0.0",
     "pino-pretty": "^4.0.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3"

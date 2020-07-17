@@ -28,4 +28,5 @@ jobs:
           git config --global user.name "GitHub Action"
           git reset HEAD --hard
           npm run version:prerelease -- --preid=alpha --yes
+          npm run build
           npm run publish -- --yes
