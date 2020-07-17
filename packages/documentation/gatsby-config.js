@@ -15,5 +15,5 @@ module.exports = {
         // See: https://github.com/dequelabs/axe-core/blob/master/doc/API.md#context-parameter
       }
     }
-  }, ]
+  }]
 }
