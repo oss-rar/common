@@ -14,7 +14,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        npm install
+        npm ci
         npm run bootstrap
         npm run build
         npm run docz:build
@@ -37,7 +37,7 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          npm install
+          npm ci
           npm run bootstrap
           npm run build
           npm run test
