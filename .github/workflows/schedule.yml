@@ -22,3 +22,11 @@ jobs:
           npm run version:graduate -- --yes
           npm run build
           npm run publish -- --yes
+          npm run docz:build
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@master
+        env:
+          EMAIL: action@github.com
+          GITHUB_ACTOR: Github Actions
+          GH_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+          BUILD_DIR: _docs/
