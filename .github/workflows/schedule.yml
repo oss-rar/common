@@ -19,6 +19,6 @@ jobs:
           npm run bootstrap
           npm run build
           npm run test
-          npm run version:graduate -- --yes || echo "Nothing to graduate"
+          npm run version:graduate -- --yes
           npm run build
-          npm run publish -- --yes || echo "Nothing to publish"
+          npm run publish -- --yes
