@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "dev": "docz dev",
-    "build": "rimraf .docz && docz build",
+    "build": "rimraf .docz && npm ci && docz build",
     "serve": "docz serve"
   },
   "dependencies": {
