@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.20-alpha.0 (2020-11-19)
+
+**Note:** Version bump only for package @oss-rar/documentation
+
+
+
+
+
 ## [0.0.19](https://github.com/oss-rar/common/compare/v0.0.19-alpha.1...v0.0.19) (2020-11-06)
 
 **Note:** Version bump only for package @oss-rar/documentation
