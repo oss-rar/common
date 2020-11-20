@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/react": "^16.8.23",
-    "@types/react-dom": "^16.8.4",
+    "@types/react-dom": "^17.0.0",
     "react-axe": "^3.4.1"
   }
 }
