@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@oss-rar/documentation",
-  "version": "0.0.22",
+  "version": "0.0.23-alpha.0",
   "license": "MIT",
   "files": [
     "src/",
