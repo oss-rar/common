@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.26-alpha.0 (2021-01-15)
+
+**Note:** Version bump only for package root
+
+
+
+
+
 ## [0.0.25](https://github.com/oss-rar/common/compare/v0.0.25-alpha.0...v0.0.25) (2021-01-08)
 
 **Note:** Version bump only for package root
