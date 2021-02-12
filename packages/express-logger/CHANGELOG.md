@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.29](https://github.com/oss-rar/common/compare/v0.0.29-alpha.5...v0.0.29) (2021-02-12)
+
+**Note:** Version bump only for package @oss-rar/express-logger
+
+
+
+
+
 ## 0.0.29-alpha.5 (2021-02-11)
 
 **Note:** Version bump only for package @oss-rar/express-logger
