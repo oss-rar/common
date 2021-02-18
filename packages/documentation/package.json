@@ -20,7 +20,7 @@
     "docz": "latest",
     "gatsby-plugin-react-axe": "^0.4.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@types/react": "^16.8.23",
