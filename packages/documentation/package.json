@@ -19,7 +19,7 @@
     "@emotion/styled": "^10.0.27",
     "docz": "latest",
     "gatsby-plugin-react-axe": "^0.4.1",
-    "react": "^16.8.6",
+    "react": "^17.0.1",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
