@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.48-alpha.0 (2021-06-21)
+
+**Note:** Version bump only for package @oss-rar/express-logger
+
+
+
+
+
 ## [0.0.47](https://github.com/oss-rar/common/compare/v0.0.47-alpha.4...v0.0.47) (2021-06-18)
 
 **Note:** Version bump only for package @oss-rar/express-logger
