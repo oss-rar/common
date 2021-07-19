@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
-    "@emotion/styled": "^10.0.27",
+    "@emotion/styled": "^11.0.0",
     "docz": "latest",
     "gatsby-plugin-react-axe": "^0.4.1",
     "react": "^16.8.6",
